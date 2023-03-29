@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
 
 function App() {
+  const [apiData, setApiData] = useState([]);
+  console.log(apiData);
+
+  useEffect(() => {
+    const getApi = () => {
+      axios
+        .get("https://fakestoreapi.com/products")
+        .then((res) => setApiData(res.data))
+        .catch((error) => console.log(error));
+    };
+    getApi();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {apiData.map((pro) => (
+        <Link to={`product/${pro.id}`} state={pro}>
+          <div className="pro_image">
+            <img src={pro.image} alt="" />
+            <h1>{pro.title}</h1>
+            <p>{pro.price}</p>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 }

@@ -1,0 +1,143 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  padding: 24px;
+}
+.img img {
+  width: 325px;
+  height: 325px;
+}
+.text {
+  color: #211e22;
+}
+.text h3 {
+  width: 500px;
+  font-size: 31px;
+  color: #211e22;
+}
+.text p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.text p a {
+  color: #7f187f;
+  margin-left: 3px;
+}
+.text p a:hover {
+  text-decoration: none;
+}
+.text .margin {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.text .margin svg {
+  font-size: 16px;
+}
+.text .margin span {
+  margin-right: 10px;
+}
+.sum {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.sum p {
+  color: #ab3959;
+  font-size: 2.4375rem;
+}
+.sum p span {
+  font-size: 16px;
+}
+.sum p span:nth-child(1) {
+  color: #9a999c;
+  margin: 0 10px;
+}
+.sum2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.green {
+  color: #fff;
+  background-color: #3f8342;
+  font-style: italic;
+  height: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  padding-right: 2px;
+  margin-right: -3px;
+  padding-left: 6px;
+  padding-top: 0.07em;
+  border-radius: 4px 0 0 4px;
+  width: 110px;
+}
+.box .flex2 span {
+  margin: 0 5px;
+}
+.box .flex2 span:nth-child(2) {
+  font-weight: 700;
+}
+.input {
+  border: 1px solid #211e22;
+  margin: 0;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 550px;
+  display: flex;
+}
+.input:nth-child(2){
+  margin-bottom: 20px;
+}
+.input:hover .hover{
+  color: #7f187f;
+}
+.input:hover svg{
+  color: #7f187f;
+}
+.input p {
+  margin: 0;
+}
+.input .top1 {
+  display: flex;
+  padding: 5px 30px;
+}
+.top1 p .color{
+  color: #757377;
+  font-size: 13px;
+}
+.top1 .hover:hover{
+  color: #ab3959;
+}
+.input img {
+  width: 30px;
+  height: 30px;
+  margin-left: 83%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.input svg {
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.margin2{
+  display: flex;
+  align-items: center;
+  margin-left: 60%;
+}
+.margin2 .svg{
+  margin-left: 40px;
+}
+.margin3{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 89%;
+  margin-top: 8px;
+}

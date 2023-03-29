@@ -1,0 +1,85 @@
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 50px;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+.menu svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.menu a span{
+  margin-right: 10px;
+}
+.menu a:hover {
+  color: #7f187f;
+}
+.logo img {
+  width: 150px;
+  height: 33px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.search {
+  border: 1px solid #000;
+  height: 48px;
+  border-radius: 8px;
+  color: #211e22;
+  display: flex;
+  align-items: center;
+  width: 776px;
+  position: relative;
+}
+.search svg {
+  width: 24px;
+  height: 24px;
+  padding-left: 18px;
+  position: absolute;
+  z-index: -9999;
+}
+.search input {
+  border: none;
+  width: 92%;
+  height: 100%;
+  padding-left: 15px;
+  margin-left: 55px;
+  position: absolute;
+}
+.search input:focus {
+  border-radius: 10px;
+  width: 99%;
+  height: 90%;
+  margin-left: 5px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  padding-left: 16px;
+}
+.icons div {
+  cursor: pointer;
+}
+.icons div:hover {
+  color: #7f187f;
+}
+.icons svg {
+  width: 30px;
+  height: 30px;
+}
+.icons span {
+  margin: 0 10px;
+}
